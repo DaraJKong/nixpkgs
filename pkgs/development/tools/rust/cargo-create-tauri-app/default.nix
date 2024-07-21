@@ -19,6 +19,7 @@ rustPlatform.buildRustPackage rec {
 
   meta = with lib; {
     description = "Rapidly scaffold out a new tauri app project.";
+    mainProgram = "cargo-create-tauri-app";
     homepage = "https://tauri.app/";
     license = with licenses; [
       asl20
