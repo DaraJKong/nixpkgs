@@ -11,7 +11,7 @@
   webkitgtk_4_1,
   darwin,
 }: let
-  inherit (darwin.apple_sdk.frameworks) CoreServices Security;
+  inherit (darwin.apple_sdk.frameworks) CoreServices Security SystemConfiguration;
 in
   rustPlatform.buildRustPackage rec {
     pname = "tauri";
@@ -32,7 +32,7 @@ in
 
     buildInputs =
       lib.optionals stdenv.isLinux [glibc libsoup_3 cairo gtk3 webkitgtk_4_1]
-      ++ lib.optionals stdenv.isDarwin [CoreServices Security];
+      ++ lib.optionals stdenv.isDarwin [CoreServices Security SystemConfiguration];
     nativeBuildInputs = [pkg-config];
 
     meta = with lib; {

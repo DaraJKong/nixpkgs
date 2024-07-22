@@ -16478,6 +16478,8 @@ with pkgs;
   cargo-unused-features = callPackage ../development/tools/rust/cargo-unused-features { };
 
   cargo-tauri = callPackage ../development/tools/rust/cargo-tauri { };
+  cargo-tauri-beta = callPackage ../development/tools/rust/cargo-tauri-beta { };
+  cargo-create-tauri-app = callPackage ../development/tools/rust/cargo-create-tauri-app { };
   cargo-mobile2 = callPackage ../development/tools/rust/cargo-mobile2 { };
 
   cargo-valgrind = callPackage ../development/tools/rust/cargo-valgrind { };
