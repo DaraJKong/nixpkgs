@@ -16481,6 +16481,7 @@ with pkgs;
   cargo-tauri-beta = callPackage ../development/tools/rust/cargo-tauri-beta { };
   cargo-create-tauri-app = callPackage ../development/tools/rust/cargo-create-tauri-app { };
   cargo-mobile2 = callPackage ../development/tools/rust/cargo-mobile2 { };
+  cargo-mobile2-patch = callPackage ../development/tools/rust/cargo-mobile2-patch { };
 
   cargo-valgrind = callPackage ../development/tools/rust/cargo-valgrind { };
   cargo-vet = callPackage ../development/tools/rust/cargo-vet {
