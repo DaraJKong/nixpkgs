@@ -826,6 +826,8 @@ with pkgs;
     autoreconfHook = buildPackages.autoreconfHook269;
   };
 
+  series-troxide = callPackage ../applications/misc/series-troxide { };
+
   gretl = callPackage ../applications/science/math/gretl {
     inherit (darwin.apple_sdk.frameworks) Accelerate;
   };
